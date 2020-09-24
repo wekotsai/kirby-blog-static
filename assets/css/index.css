@@ -27,19 +27,22 @@ html {
 }
 
 body {
-    margin: 3rem; 
-    background-color: #f9c6cf;
+    margin: 3rem ; 
+    background-color: #ffffff;
     color: #2b292a;
 }
 
 header {
-    margin-bottom: 1.5rem;
+    margin: -3rem;
+    padding: 2rem 3em;
     display: flex;
+    background-color: #f9c6cf;
     justify-content: space-between;
+    border-bottom: solid 3px; 
 }
 
 h1 {
-    margin: 3rem 0;
+    margin: 6rem 0 3rem 0;
     display: flex;
     justify-content: center;
 }
@@ -60,8 +63,13 @@ ol li {
     padding: 1rem;
 }
 
+li p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
 .logo {
-    width: 6em;
+    width: 6.5em;
 }
 
 .menu {
@@ -80,7 +88,7 @@ ol li {
 .blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
 }
 
 .gallery {
@@ -89,12 +97,33 @@ ol li {
     padding: 2rem;
 }
 
-.homeImg {
-    margin-bottom: 3rem;
-}
-
 .footer {
     display: flex;
     justify-content: center;
     margin: 3rem 0;
+}
+
+.header-home { 
+    height: 620px;
+    border-bottom: solid 5px; 
+}
+
+.logo-home {
+    width: 15rem;
+}
+
+.menu-home {
+    text-align: right;
+    list-style: none;
+    font-size: 3rem;
+    margin-top: 25rem;
+}
+
+.menu-item {
+    padding-bottom: 2rem;
+}
+
+.menu-item a:hover {
+    text-decoration: line-through;
+    color: #ffffff;
 }
