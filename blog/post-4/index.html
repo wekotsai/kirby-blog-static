@@ -18,10 +18,35 @@
     </header>
     
     <h1>
-    Gatsby JS    </h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Javascript 101    </h1>
+
 </body>
-</html>    
+</html>
+<h3>Target element</h3>
+<p>A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: <code>element.insertAdjacentText(‘ beforehand ’,  ‘ Hiya ’);</code></p>
+<ol>
+<li>'beforebegin': Before the targetElement itself.</li>
+<li>'afterbegin': Just inside the targetElement, before its first child.</li>
+<li>'beforeend': Just inside the targetElement, after its last child.</li>
+<li>'afterend': After the targetElement itself</li>
+<li><code>targetElement.insertAdjacentElement(position, element);</code></li>
+</ol>
+<h3>Console elements</h3>
+<p>Dev tools &gt; Network &gt; XHR allows you to see the raw data</p>
+<ol>
+<li>In dev tools - <code>$0</code> to look up element</li>
+<li><code>$0</code> is the last element you clicked, <code>$1</code> is the second last element you clicked</li>
+<li><code>$( 'p' )</code> the first one that matches the selector</li>
+<li><code>$$( 'p' )</code> all the ones that match the selector</li>
+</ol>
+<p><strong>Equality comparison operator</strong></p>
+<ol>
+<li>Both abstract equality operator <code>==</code> and strict equality operator <code>===</code> are case sensitive</li>
+<li>Almost always we should use <code>===</code> it always checks the value and the type</li>
+<li>I.e. <code>“10” == 10</code> is <em>true</em> but <code>“10” === 10</code> <em>false</em></li>
+</ol>
+<h3>querySelector vs querySelectorAll</h3>
+<p>The former selects one single element whereas the latter selects a list of elements</p>    
 <ul class="gallery">
         <li>
         <a href="/media/pages/blog/post-4/c2c1625253-1595933835/1_plane.jpg">
@@ -29,8 +54,8 @@
     </li>
     </ul>
 
-<footer>
-    All rights reserved TUB 2020</footer>
+<footer class="footer">
+    © 2020 TUB All rights reserved</footer>
 
 </body>
 </html>

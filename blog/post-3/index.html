@@ -18,23 +18,40 @@
     </header>
     
     <h1>
-    Kirby    </h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Kirby 101    </h1>
+
 </body>
-</html>    
+</html>
+<p><strong>Google structured data</strong> </p>
+<ol>
+<li>
+<p>In Json:<br />
+Wrap <em>@id</em> and <em>name</em> in item<br />
+<code>"item": { "@id": "https://www.data4life.care/en/what-we-do/", "name": "What we do" }</code></p>
+</li>
+<li>
+<p>In code editor:<br />
+Add URL base before <code>$crumb-&gt;url()</code><br />
+<code>"@id": "&lt;?php echo str_replace($kirby-&gt;url('index'), $site-&gt;globalsiteurl(), $crumb-&gt;url()) ?&gt;"</code></p>
+</li>
+</ol>
+<p><strong>Add new cards in Kirby</strong></p>
+<ol>
+<li>Display cards:<br />
+<code>&lt;?php foreach ($data-&gt;helpfulCards()-&gt;toFiles() as $card) echo '&lt;a href="#"&gt;' .$card. '&lt;/a&gt;' ?&gt;</code></li>
+<li>Icons: <code>echo $block-&gt;faqicon()-&gt;toFile()</code></li>
+<li>Captions under icons: <code>str::unhtml($block-&gt;introtext()-&gt;kt()) to removed all html tags</code></li>
+<li>Links: Generated ids using <code>Str::slug()</code></li>
+</ol>    
 <ul class="gallery">
         <li>
-        <a href="/media/pages/blog/post-3/e764d7b22a-1595922216/1_hot-air-balloons.jpg">
-            <img alt="" src="/media/pages/blog/post-3/e764d7b22a-1595922216/1-hot-air-balloons-800x.jpg">        </a>
-    </li>
-        <li>
-        <a href="/media/pages/blog/post-3/20b9c144f6-1595860104/2_programmer.jpg">
-            <img alt="" src="/media/pages/blog/post-3/20b9c144f6-1595860104/2-programmer-800x.jpg">        </a>
+        <a href="/media/pages/blog/post-3/20b9c144f6-1600877278/2_programmer.jpg">
+            <img alt="" src="/media/pages/blog/post-3/20b9c144f6-1600877278/2-programmer-800x.jpg">        </a>
     </li>
     </ul>
 
-<footer>
-    All rights reserved TUB 2020</footer>
+<footer class="footer">
+    © 2020 TUB All rights reserved</footer>
 
 </body>
 </html>

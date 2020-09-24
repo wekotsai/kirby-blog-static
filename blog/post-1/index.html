@@ -18,19 +18,35 @@
     </header>
     
     <h1>
-    CLI vs GUI    </h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Anchor scrolling position    </h1>
+
 </body>
-</html>    
+</html>
+<p>Here are a few tips for anchor links that scroll too far down: </p>
+<ol>
+<li>
+<p>Add a pseudo element <code>::before</code> along with <code>content: " ";</code> and<br />
+<code>display: block;</code></p>
+</li>
+<li>
+<p>Add an <code>&lt;a&gt;</code> tag with an id right before the targeted element</p>
+</li>
+<li>
+<p>Add <code>scroll-margin</code> (append to parent div not pseudo element)</p>
+</li>
+</ol>
+<p>Notes:<br />
+scroll margin doesn’t work on Safari, please refer to <a href="/caniuse">caniuse.com</a><br />
+<code>display: block;</code> might affect the original layout</p>    
 <ul class="gallery">
         <li>
-        <a href="/media/pages/blog/post-1/6667952f88-1595933825/1_mountain.jpg">
-            <img alt="" src="/media/pages/blog/post-1/6667952f88-1595933825/1-mountain-800x.jpg">        </a>
+        <a href="/media/pages/blog/post-1/bef922818c-1600876874/plane.jpg">
+            <img alt="" src="/media/pages/blog/post-1/bef922818c-1600876874/plane-800x.jpg">        </a>
     </li>
     </ul>
 
-<footer>
-    All rights reserved TUB 2020</footer>
+<footer class="footer">
+    © 2020 TUB All rights reserved</footer>
 
 </body>
 </html>
