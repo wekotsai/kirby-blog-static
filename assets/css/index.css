@@ -16,7 +16,7 @@ h3 {
 }
 
 code {
-    background-color: #e4d8d8;
+    background-color: #e7e7e7e7;
     color: #d00a76;
     font-weight: 600;
     padding: 2px;
@@ -63,7 +63,7 @@ ol li {
     padding: 1rem;
 }
 
-li p {
+.blog-title {
     text-align: center;
     margin-top: 0.5rem;
 }
