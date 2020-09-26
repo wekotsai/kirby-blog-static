@@ -27,14 +27,14 @@ html {
 }
 
 body {
-  margin: 3rem ; 
+  margin: 2rem ; 
   background-color: #ffffff;
   color: #2b292a;
 }
 
 header {
-  margin: -3rem;
-  padding: 2rem 3em;
+  margin: -2.5rem;
+  padding: 2rem 2em;
   display: flex;
   background-color: #f9c6cf;
   justify-content: space-between;
@@ -137,5 +137,10 @@ ol li {
 
   .header-home {
     height: 43rem;
+  }
+
+  .gallery {
+    width: 100%;
+    padding: 2em 0;
   }
 }
