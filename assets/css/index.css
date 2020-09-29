@@ -29,12 +29,13 @@ html {
 body { 
   background-color: #ffffff;
   color: #2b292a;
+  font-family: "Mabry", sans-serif;
 }
 
 header {
   padding: 2rem 2em;
   display: flex;
-  background-color: #f9c6cf;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -56,11 +57,6 @@ ol li {
   padding: 1rem;
 }
 
-.blog-title {
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
 .logo {
   width: 10em;
 }
@@ -72,20 +68,29 @@ ol li {
 .menu a {
   margin-top: 6rem;
   margin-left: 1.5rem;
+  font-weight: 600;
 }
 
 .menu a:hover {
-  color: #ffffff;
+  text-decoration: line-through;
+  color: currentColor;
 }
 
 .blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 2rem;
+  padding: 0 2rem;
 }
 
-.blog, .gallery li {
-  list-style: none;  
+.blog-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.blog-post {
+  list-style: none; 
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
 .gallery {
@@ -97,12 +102,13 @@ ol li {
 /* HOME */
 
 .header-home { 
-  height: 35rem;
-  /* border-bottom: solid 5px;  */
+  height: 46rem;
+  align-items: normal;
+  background-color: #ffe4e1;
 }
 
-.logo-home img {
-  width: 30rem;
+.logo-home {
+  width: 64rem;
   margin-top: 6rem;
   position: absolute;
 }
@@ -111,7 +117,8 @@ ol li {
   text-align: right;
   list-style: none;
   font-size: 2em;
-  margin-top: 20rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .menu-item {
@@ -120,7 +127,7 @@ ol li {
 
 .menu-item a:hover {
   text-decoration: line-through;
-  color: #ffffff;
+  color: #2b292a;
 }
 
 /* FOOTER */
