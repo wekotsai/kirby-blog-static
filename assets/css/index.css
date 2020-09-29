@@ -158,12 +158,17 @@ ol li {
     grid-template-columns: none;
   }
 
-  .header-home {
-    height: 43rem;
+  .logo-home {
+    width: 15rem;
+    margin-top: 30rem;
   }
 
   .gallery {
     width: 100%;
     padding: 2em 0;
+  }
+
+  header {
+    align-items: start;
   }
 }
