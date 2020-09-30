@@ -58,13 +58,12 @@ ol li {
 }
 
 .logo {
-    width: 10em;
+  width: 10em;
 }
 
 .logo span {
   width: 10em;
   font-size: 3em;
-  font-weight: 600;
 }
 
 .menu {
@@ -100,16 +99,56 @@ ol li {
 }
 
 .gallery {
+  list-style: none; 
   width: 60%;
   margin: 0 auto;
   padding: 2rem;
 }
 
+.post {
+  padding: 2rem;
+}
+
 /* HOME */
 
-.header-home { 
-  height: 46rem;
-  background-color: #ffe4e1;
+.wrapper {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: sliding-background 40s linear infinite;
+  background: url("../images/berlin.jpg") no-repeat left/120%;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+  
+.title {
+  font-family: 'Bebas Neue';
+  color: white;
+  font-size: 12vw;
+  letter-spacing: 1vw;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+}
+  
+.title:before {
+  color: white;
+  content: attr(data-text);
+  margin-left: -1%;
+  margin-top: -1%;
+  position: absolute;
+}
+  
+@keyframes sliding-background {
+    0%,
+    100% {
+      background-position: 0 40%;
+    }
+    50% {
+      background-position: 100% 40%;
+    }
 }
 
 .logo-home {
@@ -132,7 +171,6 @@ ol li {
 
 .menu-item a:hover {
   text-decoration: line-through;
-  color: #2b292a;
 }
 
 /* FOOTER */
@@ -148,7 +186,7 @@ ol li {
 }
 
 .socialmedia img {
-  width: 3em;
+  width: 2em;
   margin-right: 1em;
 }
 
@@ -158,29 +196,44 @@ ol li {
   margin-top: 1em;
 }
 
+
+/* MOBILE */
+
 @media only screen and (max-width: 600px) {
-  .blog {
-    grid-template-columns: none;
+    .blog {
+      grid-template-columns: none;
+    }
+  
+    .gallery {
+      width: 100%;
+      padding: 2em 0;
+    }
+  
+    header {
+      align-items: start;
+    }
+  
+    .home-wrapper {
+      display: grid;
+    }
+  
+    .logo-home {
+      font-size: 4.5em;
+    }
+  
+    .menu-home {
+      text-align: right;
+      color: #ffffff;
+      margin-top: 22rem;
+      font-size: 1.5em;
+    }
+  
+    .wrapper {
+      background: url("../images/berlin.jpg") no-repeat left/280%;
+    }
+  
+    .title {
+      font-size: 8vw; 
+      margin-top: -32rem;
+    }
   }
-
-  .gallery {
-    width: 100%;
-    padding: 2em 0;
-  }
-
-  header {
-    align-items: start;
-  }
-
-  .header-home {
-    display: grid;
-  }
-
-  .logo-home {
-    font-size: 4.5em;
-  }
-
-  .menu-home {
-      text-align: left;
-  }
-}
