@@ -171,4 +171,16 @@ ol li {
   header {
     align-items: start;
   }
+
+  .header-home {
+    display: grid;
+  }
+
+  .logo-home {
+    font-size: 4.5em;
+  }
+
+  .menu-home {
+      text-align: left;
+  }
 }
