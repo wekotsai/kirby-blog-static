@@ -58,7 +58,13 @@ ol li {
 }
 
 .logo {
+    width: 10em;
+}
+
+.logo span {
   width: 10em;
+  font-size: 3em;
+  font-weight: 600;
 }
 
 .menu {
@@ -103,14 +109,13 @@ ol li {
 
 .header-home { 
   height: 46rem;
-  align-items: normal;
   background-color: #ffe4e1;
 }
 
 .logo-home {
-  width: 64rem;
-  margin-top: 6rem;
-  position: absolute;
+  font-weight: 700;
+  font-size: 12rem;
+  font-family: 'Bebas Neue';
 }
 
 .menu-home {
@@ -156,11 +161,6 @@ ol li {
 @media only screen and (max-width: 600px) {
   .blog {
     grid-template-columns: none;
-  }
-
-  .logo-home {
-    width: 15rem;
-    margin-top: 30rem;
   }
 
   .gallery {
