@@ -6,22 +6,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 
     <link href="/assets/css/index.css" rel="stylesheet"></head>
-<body>
-    <header>
-        <a class="logo" href="/">
-            <span class="logo-home">uber <br> berliner</span>
-        </a>
-    
-        <nav class="menu">
-                        <a href="/blog">Tech</a>
-                        <a href="/fashion">Fashion</a>
-                        <a href="/about">About</a>
-                    </nav>
-    </header>
-    
-    <h1>
-    Tech    </h1>
+<body>  
+  <header>
+    <a class="logo" href="/">
+      <span class="logo-home">uber <br> berliner</span>
+    </a>
+    <nav class="nav" role="navigation">
+      <input class="menu__checkbox" type="checkbox" role="Menu" aria-label="Menu" aria-controls="navigation" aria-haspopup="true" id="menu">
+      <label class="menu__icon" for="menu"><span class="hamburger"></span></label>
+        <ul class="menu" role="menuitem">
+          <li>
+                          <a href="/blog">Tech</a>
+                          <a href="/fashion">Fashion</a>
+                          <a href="/about">About</a>
+                      </li>  
+        </ul>
+    </nav>   
+  </header>
 
+  <h1>
+    Tech  </h1>
+
+<script src="assets/js/index.js"></script>
 </body>
 </html>    
 <ul class="blog">
