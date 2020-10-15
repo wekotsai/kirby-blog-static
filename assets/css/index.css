@@ -103,6 +103,10 @@ header {
   box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
+.tags a {
+  display: block;
+}
+
 .gallery {
   list-style: none; 
   width: 60%;
@@ -205,6 +209,30 @@ header {
   display: none;
 }
 
+.tags {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  list-style: none;
+}
+
+.tag {
+  margin: 1rem;
+  border: solid 1px #2b292a;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.btn {
+  background-color: #2b292a;
+  text-align: center;
+  width: 100px;
+  margin-right: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
 /* MOBILE */
 
 @media only screen and (max-width: 600px) {
@@ -242,7 +270,7 @@ header {
     }
   
     .wrapper {
-      background: url("../images/berlin.jpg") no-repeat left/280%;
+      background: url("../images/berlin.jpg") no-repeat left/330%;
     }
   
     .title {
