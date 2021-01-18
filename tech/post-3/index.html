@@ -46,9 +46,14 @@
   </nav>
 
 <div class="post">
-  <p><strong>Google structured data</strong> </p>
+  <h3>How to sort by date</h3>
+<p>Sort articles by publication date:  <code>sortBy('published', desc)</code><br />
+When wrapped in a <code>filterBy</code> parenthesis, everything has to be <strong>lower-cased</strong><br />
+⭕(pressrelease)<br />
+❌ (pressRelease)</p>
+<h3>Google structured data</h3>
 <ol>
-<li>In Json:<br />
+<li>In JSON:<br />
 Wrap <em>@id</em> and <em>name</em> in item  <pre><code class="language-css">
 `"item":
   {
@@ -61,7 +66,7 @@ Wrap <em>@id</em> and <em>name</em> in item  <pre><code class="language-css">
 Add URL base before <code>$crumb-&gt;url()</code><br />
 <code>"@id": "&lt;?php echo str_replace($kirby-&gt;url('index'), $site-&gt;globalsiteurl(), $crumb-&gt;url()) ?&gt;"</code></li>
 </ol>
-<p><strong>Add new cards in Kirby</strong></p>
+<h3>Add new cards in Kirby</h3>
 <ol>
 <li>Display cards:<br />
 <code>&lt;?php foreach ($data-&gt;helpfulCards()-&gt;toFiles() as $card) echo '&lt;a href="#"&gt;' .$card. '&lt;/a&gt;' ?&gt;</code></li>
