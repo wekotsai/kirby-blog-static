@@ -26,7 +26,7 @@
   </header>
 
   <h1>
-    Shop vintage  </h1>
+    Accessibility  </h1>
 
 <script src="/assets/js/index.js"></script>
 <script src="/assets/js/prism.js"></script></body>
@@ -36,22 +36,31 @@
         Home      </a>
     </p>
       <p>
-      <a href="/fashion" >
-        Fashion      </a>
+      <a href="/tech" >
+        Tech      </a>
     </p>
       <p>
-      <a href="/fashion/vintage" aria-current="page">
-        Shop vintage      </a>
+      <a href="/tech/post-2" aria-current="page">
+        Accessibility      </a>
     </p>
   </nav>
 
 <div class="post">
-    <ul class="gallery">
-                    <li>
-          <a href="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w.jpg">
-            <img alt="" src="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w-800x.jpg">          </a>
-        </li>
-            </ul>
+  <h3>Skip to content links</h3>
+<p>Skip links allow screenreader to skip the navigation bar and avoid repetition. </p>
+<p>The key is to hide the button by default and display when 'escape' is pressed. </p>
+<p>Here's a simple example:</p>
+<pre><code class="language-css">
+.skip-link {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+}
+<p>.skip-link:focus {<br />
+transform: translateY(0%);<br />
+}</p>
+</pre></code>  <ul class="gallery">
+        </ul>
 </div>
 <footer class="footer">
   <div class="socialmedia">  

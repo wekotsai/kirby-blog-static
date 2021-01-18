@@ -26,7 +26,7 @@
   </header>
 
   <h1>
-    Shop vintage  </h1>
+    Javascript 101  </h1>
 
 <script src="/assets/js/index.js"></script>
 <script src="/assets/js/prism.js"></script></body>
@@ -36,22 +36,42 @@
         Home      </a>
     </p>
       <p>
-      <a href="/fashion" >
-        Fashion      </a>
+      <a href="/tech" >
+        Tech      </a>
     </p>
       <p>
-      <a href="/fashion/vintage" aria-current="page">
-        Shop vintage      </a>
+      <a href="/tech/post-4" aria-current="page">
+        Javascript 101      </a>
     </p>
   </nav>
 
 <div class="post">
-    <ul class="gallery">
-                    <li>
-          <a href="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w.jpg">
-            <img alt="" src="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w-800x.jpg">          </a>
-        </li>
-            </ul>
+  <h3>Target element</h3>
+<p>A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: <code>element.insertAdjacentText(‘ beforehand ’,  ‘ Hiya ’);</code></p>
+<ol>
+<li>'beforebegin': Before the targetElement itself.</li>
+<li>'afterbegin': Just inside the targetElement, before its first child.</li>
+<li>'beforeend': Just inside the targetElement, after its last child.</li>
+<li>'afterend': After the targetElement itself</li>
+<li><code>targetElement.insertAdjacentElement(position, element);</code></li>
+</ol>
+<h3>Console elements</h3>
+<p>Dev tools &gt; Network &gt; XHR allows you to see the raw data</p>
+<ol>
+<li>In dev tools - <code>$0</code> to look up element</li>
+<li><code>$0</code> is the last element you clicked, <code>$1</code> is the second last element you clicked</li>
+<li><code>$( 'p' )</code> the first one that matches the selector</li>
+<li><code>$$( 'p' )</code> all the ones that match the selector</li>
+</ol>
+<p><strong>Equality comparison operator</strong></p>
+<ol>
+<li>Both abstract equality operator <code>==</code> and strict equality operator <code>===</code> are case sensitive</li>
+<li>Almost always we should use <code>===</code> it always checks the value and the type</li>
+<li>I.e. <code>“10” == 10</code> is <em>true</em> but <code>“10” === 10</code> <em>false</em></li>
+</ol>
+<h3>querySelector vs querySelectorAll</h3>
+<p>The former selects one single element whereas the latter selects a list of elements</p>  <ul class="gallery">
+        </ul>
 </div>
 <footer class="footer">
   <div class="socialmedia">  

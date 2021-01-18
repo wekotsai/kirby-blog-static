@@ -26,7 +26,7 @@
   </header>
 
   <h1>
-    Shop vintage  </h1>
+    CSS Tricks  </h1>
 
 <script src="/assets/js/index.js"></script>
 <script src="/assets/js/prism.js"></script></body>
@@ -36,22 +36,33 @@
         Home      </a>
     </p>
       <p>
-      <a href="/fashion" >
-        Fashion      </a>
+      <a href="/tech" >
+        Tech      </a>
     </p>
       <p>
-      <a href="/fashion/vintage" aria-current="page">
-        Shop vintage      </a>
+      <a href="/tech/post-1" aria-current="page">
+        CSS Tricks      </a>
     </p>
   </nav>
 
 <div class="post">
-    <ul class="gallery">
-                    <li>
-          <a href="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w.jpg">
-            <img alt="" src="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w-800x.jpg">          </a>
-        </li>
-            </ul>
+  <h3>Anchor scrolling position</h3>
+<p>Here are a few tips for anchor links that scroll too far down: </p>
+<ol>
+<li>
+<p>Add a pseudo element <code>::before</code> along with <code>content: " ";</code> and <code>display: block;</code></p>
+</li>
+<li>
+<p>Add an <code>&lt;a&gt;</code> tag with an id right before the targeted element</p>
+</li>
+<li>
+<p>Add <code>scroll-margin</code> (append to parent div not pseudo element)</p>
+</li>
+</ol>
+<p>Notes:<br />
+scroll margin doesn’t work on Safari, please refer to <a href="/caniuse">caniuse.com</a><br />
+<code>display: block;</code> might affect the original layout</p>  <ul class="gallery">
+        </ul>
 </div>
 <footer class="footer">
   <div class="socialmedia">  

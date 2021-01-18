@@ -26,7 +26,7 @@
   </header>
 
   <h1>
-    Shop vintage  </h1>
+    Kirby 101  </h1>
 
 <script src="/assets/js/index.js"></script>
 <script src="/assets/js/prism.js"></script></body>
@@ -36,22 +36,40 @@
         Home      </a>
     </p>
       <p>
-      <a href="/fashion" >
-        Fashion      </a>
+      <a href="/tech" >
+        Tech      </a>
     </p>
       <p>
-      <a href="/fashion/vintage" aria-current="page">
-        Shop vintage      </a>
+      <a href="/tech/post-3" aria-current="page">
+        Kirby 101      </a>
     </p>
   </nav>
 
 <div class="post">
-    <ul class="gallery">
-                    <li>
-          <a href="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w.jpg">
-            <img alt="" src="/media/pages/fashion/vintage/de8fe2a4b9-1606899470/a-w-800x.jpg">          </a>
-        </li>
-            </ul>
+  <p><strong>Google structured data</strong> </p>
+<ol>
+<li>In Json:<br />
+Wrap <em>@id</em> and <em>name</em> in item  <pre><code class="language-css">
+`"item":
+  {
+    "@id": "https://www.data4life.care/en/what-we-do/",
+    "name": "What we do"
+  }`
+</pre></code>
+</li>
+<li>In code editor:<br />
+Add URL base before <code>$crumb-&gt;url()</code><br />
+<code>"@id": "&lt;?php echo str_replace($kirby-&gt;url('index'), $site-&gt;globalsiteurl(), $crumb-&gt;url()) ?&gt;"</code></li>
+</ol>
+<p><strong>Add new cards in Kirby</strong></p>
+<ol>
+<li>Display cards:<br />
+<code>&lt;?php foreach ($data-&gt;helpfulCards()-&gt;toFiles() as $card) echo '&lt;a href="#"&gt;' .$card. '&lt;/a&gt;' ?&gt;</code></li>
+<li>Icons: <code>echo $block-&gt;faqicon()-&gt;toFile()</code></li>
+<li>Captions under icons: <code>str::unhtml($block-&gt;introtext()-&gt;kt()) to removed all html tags</code></li>
+<li>Links: Generated ids using <code>Str::slug()</code></li>
+</ol>  <ul class="gallery">
+        </ul>
 </div>
 <footer class="footer">
   <div class="socialmedia">  
