@@ -47,14 +47,15 @@
 
 <div class="post">
   <h3>Target element</h3>
-<p>A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: <code>element.insertAdjacentText(‘ beforehand ’,  ‘ Hiya ’);</code></p>
-<ol>
-<li>'beforebegin': Before the targetElement itself.</li>
-<li>'afterbegin': Just inside the targetElement, before its first child.</li>
-<li>'beforeend': Just inside the targetElement, after its last child.</li>
-<li>'afterend': After the targetElement itself</li>
-<li><code>targetElement.insertAdjacentElement(position, element);</code></li>
-</ol>
+<p>A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: </p>
+<pre><code class="language-css">
+element.insertAdjacentText('beforehand', 'Tea');
+</pre></code>
+1. 'beforebegin': Before the targetElement itself.
+2. 'afterbegin': Just inside the targetElement, before its first child.
+3. 'beforeend': Just inside the targetElement, after its last child.
+4. 'afterend': After the targetElement itself
+5. `targetElement.insertAdjacentElement(position, element);`
 <h3>Console elements</h3>
 <p>Dev tools &gt; Network &gt; XHR allows you to see the raw data</p>
 <ol>

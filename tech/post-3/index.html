@@ -48,9 +48,7 @@
 <div class="post">
   <h3>How to sort by date</h3>
 <p>Sort articles by publication date:  <code>sortBy('published', desc)</code><br />
-When wrapped in a <code>filterBy</code> parenthesis, everything has to be <strong>lower-cased</strong><br />
-⭕(pressrelease)<br />
-❌ (pressRelease)</p>
+When wrapped in a <code>filterBy</code> parenthesis, everything has to be <strong>lower-cased</strong> ⭕(pressrelease) ❌(pressRelease)</p>
 <h3>Google structured data</h3>
 <ol>
 <li>In JSON:<br />
@@ -63,13 +61,15 @@ Wrap <em>@id</em> and <em>name</em> in item  <pre><code class="language-css">
 </pre></code>
 </li>
 <li>In code editor:<br />
-Add URL base before <code>$crumb-&gt;url()</code><br />
-<code>"@id": "&lt;?php echo str_replace($kirby-&gt;url('index'), $site-&gt;globalsiteurl(), $crumb-&gt;url()) ?&gt;"</code></li>
+Add URL base before <code>$crumb-&gt;url()</code></li>
 </ol>
+<p><code>"@id": "&lt;?php echo str_replace($kirby-&gt;url('index'), $site-&gt;globalsiteurl(), $crumb-&gt;url()) ?&gt;"</code></p>
 <h3>Add new cards in Kirby</h3>
 <ol>
 <li>Display cards:<br />
-<code>&lt;?php foreach ($data-&gt;helpfulCards()-&gt;toFiles() as $card) echo '&lt;a href="#"&gt;' .$card. '&lt;/a&gt;' ?&gt;</code></li>
+&lt;?php foreach ($data-&gt;helpfulCards()-&gt;toFiles() as $card)<br />
+echo '<a href="#">' .$card. '</a>'<br />
+?&gt;</li>
 <li>Icons: <code>echo $block-&gt;faqicon()-&gt;toFile()</code></li>
 <li>Captions under icons: <code>str::unhtml($block-&gt;introtext()-&gt;kt()) to removed all html tags</code></li>
 <li>Links: Generated ids using <code>Str::slug()</code></li>

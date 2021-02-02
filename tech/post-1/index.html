@@ -46,7 +46,12 @@
   </nav>
 
 <div class="post">
-  <h3>How to prevent svg from shrinking in flex container</h3>
+  <h3>If the margin property has three values:</h3>
+<p><code>margin: 1em 0 2em;</code><br />
+top margin is <strong>1em</strong><br />
+right and left margins are <strong>0</strong><br />
+bottom margin is <strong>2em</strong></p>
+<h3>How to prevent SVG from shrinking in flex container</h3>
 <p><code>flex-shrink: 0;</code></p>
 <h3>How to center an image horizontally within a div</h3>
 <pre><code class="language-css">
@@ -66,6 +71,13 @@ margin: auto;
 <p>Add <code>scroll-margin</code> (append to parent div not pseudo element)</p>
 </li>
 </ol>
+<pre><code class="language-css">
+ display: block;
+ content: " ";
+ height: calc((var(--pagebannerHeight) + 100px));
+ margin-top: calc((var(--pagebannerHeight) + 100px) * -1);
+ pointer-events: none;
+</pre></code>
 <p>Notes:<br />
 scroll margin doesn’t work on Safari, please refer to <a href="/caniuse">caniuse.com</a><br />
 <code>display: block;</code> might affect the original layout</p>  <ul class="gallery">
